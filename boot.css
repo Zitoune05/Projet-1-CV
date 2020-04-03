@@ -13,13 +13,15 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
-.no-gutters {
-    margin-right: 0;
-    margin-left: 0;
-  
-    > .col,
-    > [class*="col-"] {
-      padding-right: 0;
-      padding-left: 0;
-    }
-  }
+h1{
+  color: #ffc107;
+}
+
+div [id="informations"] h2{
+  color: black;
+  text-transform: uppercase;
+}
+
+div [id="description"] h2{
+  text-transform: uppercase;
+}
