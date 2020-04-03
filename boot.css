@@ -13,7 +13,7 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
-h1{
+header em{
   color: #ffc107;
 }
 
@@ -22,6 +22,22 @@ div [id="informations"] h2{
   text-transform: uppercase;
 }
 
-div [id="description"] h2{
+div [id="description"] h2{    
   text-transform: uppercase;
+}
+
+div [id="informations"] p{
+  color: #4a4a4a
+}
+
+hr{
+  background-color: #ffc107;
+}
+
+div [id="informations"] header , div [id="informations"] div {
+  margin-left: 4%;margin-right: 4%;
+}
+
+div [id="description"] header , div [id="description"] div p {
+  margin-left: 4%;margin-right: 4%;
 }
