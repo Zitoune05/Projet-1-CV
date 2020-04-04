@@ -13,9 +13,40 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
-header em{
+
+/* graphisme Principal*/
+
+div [id="informations"], div [id="description"]{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* graphisme header */
+
+header h1{
+  font-size: 4.2em;
+  font-weight: 100 ;
+}
+
+header p{
+  font-size: 2em;
+}
+
+header h1 span{
   color: #ffc107;
 }
+
+
+header{
+  margin-bottom: 15%;
+}
+
+
+/* Graphisme informations*/
+
+div [id="informations"] h2{
+  font-size: 2em;
+}
+
 
 div [id="informations"] h2{
   color: black;
