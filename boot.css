@@ -14,6 +14,8 @@
 @media (min-width: 1200px) { ... }
 
 
+
+
 /* graphisme Principal*/
 
 div [id="block2"], div [id="block1"]{
@@ -32,21 +34,28 @@ div [id="block2"] hr {
 
 /* Graphisme block1*/
 
-div [id="block1"] h2{    
+div [id="block1"] h2{        /**/
   text-transform: uppercase;
   font-size: 2em;
 }
 
-div [id="block1"] div p {
-  margin-left: 4%;margin-right: 4%
+
+div [id="block1"] div p {         /**/
+  margin-left: 10%;margin-right: 10%;
+  text-align: justify;
 }
 
-div [id="block1"] div{
+div [id="block1"] div{          /**/
   text-align: center;
+  margin-top: 10%;
 }
 
-div [id="block1"] div[id="me"]{
+div [id="block1"] div[id="me"]{         /**/
   padding: 8%;
+}
+
+.filter-grey{         /**/
+  filter: invert(19%) sepia(13%) saturate(502%) hue-rotate(169deg) brightness(98%) contrast(89%);
 }
 
 
@@ -55,32 +64,24 @@ div [id="block1"] div[id="me"]{
 
 /* Graphisme block2*/
 
-div [id="block2"] h2{
+div [id="block2"] h2{         /**/
   font-size: 2em;
-}
-
-
-div [id="block2"] h2{
   color: black;
   text-transform: uppercase;
 }
 
 
-div [id="block2"] ul{
-  color: #4a4a4a;
-}
 
-div [id="block2"] header , div [id="block2"] div {
-  margin-left: 4%;margin-right: 4%;
+div [id="block2"] header , div [id="block2"] div {          /**/
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 10%;
 }
 
 
 
               /* graphisme header */
 
-              header{
-                padding-top: 10%;
-              }
 
 
               header h1{
@@ -104,3 +105,19 @@ div [id="block2"] header , div [id="block2"] div {
               header{
                 margin-bottom: 13%;
               }
+
+
+
+
+/* Tests */
+
+
+div [id="block2"] tr{         /**/
+  color: #4a4a4a;
+}
+
+div [id="block2"]  th[class="Dates"]{
+  width: 25%;
+}
+
+
