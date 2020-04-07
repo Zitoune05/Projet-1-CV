@@ -31,7 +31,7 @@ div [id="block2"] hr {        /* design element rupture */
 
 button{         /*position button*/
   position: absolute;
-  top: 1%;
+  top: 0;
   right: 5%;
 }
 button a{             /* color text button*/
@@ -45,7 +45,9 @@ button a:hover{
 
 
 
-/* Graphisme block1*/
+          /* design block1*/
+
+
 
 div [id="block1"] h2{        /* format police*/
   text-transform: uppercase;
@@ -82,7 +84,7 @@ div [id="loisir"]{    /* Position div loisir*/
 
 
 
-            /* Graphisme block2*/
+            /* design block2*/
 
 
 /*Tete de page h1+p */
@@ -110,8 +112,6 @@ header p{
 header{
   margin-bottom: 13%;     /*marge bottom*/
 }
-
-
 
 
 
