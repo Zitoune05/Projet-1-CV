@@ -203,8 +203,8 @@ th p{
 }
 }
   
-/* Si la taille de l'écran est de 576px pixels ou plus, définis loisir comme ci-dessous*/
-@media only screen and (min-width: 576px){
+/* Si la taille de l'écran est de 768px pixels ou plus, définis loisir comme ci-dessous*/
+@media only screen and (min-width: 768px){
   #loisir {    /* Position section loisir*/
     position: absolute;
     bottom: 0;
