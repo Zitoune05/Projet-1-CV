@@ -11,6 +11,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/e517cdf63c.js" crossorigin="anonymous"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
@@ -23,47 +26,46 @@
     <div class="container-fluid">
         <div class="row">
             
-            <section id="block1" class="col-md-3 ; p-0 bg-warning text-dark"><!--Partie gauche--> 
+            <aside id="block1" class="col-md-3 ; p-0 bg-warning text-dark"><!--Partie gauche--> 
                 <!--Photo identite-->
-                <article id="photo">
+                <section id="photo">
                     <img id="moi" src="moi.jpg" classe="responsive"alt="photo_identite">
-                </article> 
+                </section> 
                 <!-- Contacts -->
-                <article id="contact">
+                <section id="contact">
                     <h2 class="p-2 mb-3  bg-dark text-warning">Contact</h2>
                     <p>Adresse<br/> 271 Rue Pasteur - Bordeaux</p>
                     <p>Téléphone<br/> 06 62 43 63 23</p>
                     <p>Email<br/> trijaudnathan@yahoo.fr</p>
                     <p>Site cv<br/> http://nathan-t.com/cv.html</p>
-                </article>
+                </section>
                 <!--A propos-->
-                <article id="a-propos">
+                <section id="a-propos">
                     <h2 class="p-2 mb-3 bg-dark text-warning ">à Propos de moi</h2>
                     <p>A la recherche d’un nouveau challenge, l’idée de rejoindre une entreprise comme la vôtre est le défi que je veux relever.
                      Possédant une expérience sur un poste similaire, je suis avant tout quelqu’un qui souhaite aider à faire grandir une 
                      entreprise en m’investissant sur le long terme.
                     </p>
-                </article>
+                </section>
                 <!-- Loisirs -->
-                <article id="loisir">
-                    <h2 class="p-2 mb-3 bg-dark text-warning">Loisirs</h2>
+                <section id="loisir">
+                    <h2 class="p-2 mb-3 bg-dark text-warning">Loisirs</h2>          
                     <!-- Icons + -->  <!-- Style alignement icones-->
-                    <p><img src="svg/guitar-solid.svg" alt="icon guitar" class="filter-grey filter-circle dimension" />
-                    <img src="svg/sports_esports-24px.svg" alt="icon e-sport" class="filter-grey filter-circle dimension" /></p>
-                    <p><img src="svg/chess.svg" alt="icon chess" class="filter-grey filter-circle dimension" />
-                    <img src="svg/rendo.svg" alt="icon rendonné" class="filter-grey filter-circle dimension" /></p>                          
-                </article>
-            </section>
+                    <i class="fas fa-snowboarding filter-grey dimension filter-circle"></i>
+                    <i class="fas fa-chess filter-grey dimension filter-circle"></i>
+                    <i class="fas fa-gamepad filter-grey dimension filter-circle"></i>
+                </section>
+            </aside>
             
-            <section id="block2" class="col-md-9"><!--Partie droite-->
+            <div id="block2" class="col-md-9"><!--Partie droite-->
                 <!--Tete de page-->
                 <header>
                     <h1><span>NATHAN</span> TRIJAUD</h1> 
                     <p><span>Dévelo</span>ppeur web Junior</p>
                 </header>       
                 <!-- Formation -->
-                <article id="formation">
-                    <h2><img src="svg/school.svg" alt="icon guitar" class="filtre-icons"/>Formation</h2><!-- titre h2 -->         
+                <section id="formation">
+                    <h2><i class="fas fa-graduation-cap filtre-icons filtre-orange"></i>Formation</h2><!-- titre h2 -->         
                     <hr> <!-- element rupture -->
                            <!--Tableau formation-->
                     <table class="table table-light mt-4">                       
@@ -104,11 +106,11 @@
                             <td><h4>Sainte-Marie Bastide</h4><p>Obtention du bac sciences et technologies de la gestion, option comptabilité et finance d'entreprise</p></td>
                         </tr>
                     </table>                   
-                </article>
+                </section>
                 <!-- Experience professionnelle -->
-                <article id="experiences">
+                <section id="experiences">
                     <h2>
-                        <img src="svg/briefcase-solid.svg" alt="icon guitar" class="filtre-icons"/><!--icone-->
+                        <i class="fas fa-briefcase filtre-icons filtre-orange"></i><!--icone-->
                         Expérience professionnelle
                     </h2>  <!-- titre h2 -->
                     <hr>        <!-- element rupture -->
@@ -149,11 +151,11 @@
                             <td><h4>S.C.A.S.O</h4><p>Préparateur de commande (Société coopérative d'approvisionnement du Sud-Ouest)</p></td>
                         </tr>     
                     </table>
-                </article>
+                </section>
                 <!-- Recommandations -->
-                <article>
+                <section>
                     <h2>
-                        <img src="svg/crayon.svg" alt="icon guitar" class="filtre-icons"/><!--icone-->
+                        <i class="fas fa-pencil-alt filtre-icons filtre-orange"></i><!--icone-->
                         recommandations
                     </h2>   <!-- titre h2 -->
                     <hr>    <!-- element rupture -->
@@ -164,8 +166,8 @@
                             <td><h5>Pierre-Louis Duchamps <br/> Web Master</h5>Tel :06 62 43 63 23 <br/>Email : Plouis.d@gmail.com</td>
                         </tr>                       
                     </table>            
-                </article>
-            </section>
+                </section>
+            </div>
         </div>
     </div>
 </body>

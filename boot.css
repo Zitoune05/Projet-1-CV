@@ -15,6 +15,8 @@
 /* graphisme principal */
 /*---------------------------------*/
 body{
+  width: 100%;
+  height: auto;
   background-color: #ffffff;
     /* famille police*/
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -53,7 +55,7 @@ h4{
   font-size: 2em;
 }
 /*         ----------------                */
-/* marges hautes et basses articles block 1*/
+/* marges hautes et basses sections block 1*/
 /*         ----------------                */
 #contact{                   
   padding-bottom: 2em;
@@ -77,13 +79,13 @@ h4{
   text-align: justify;
   font-weight: 500;
 }
-#block1 article{          /* alignement texte articles*/
+#block1 section{          /* alignement texte sections*/
   width: 100%;
   text-align: center;
 }
 .dimension{           /*dimension icone loisir FontAwesome*/
-  width: 90px;
-  height: 80px;
+  font-size: 2em;
+  padding-top: 15px;
 }
 
 #loisir{
@@ -98,12 +100,13 @@ h4{
   text-align: center;
 }
 .filter-grey{         /* couleur icone loisir */
-  filter: invert(19%) sepia(13%) saturate(502%) hue-rotate(169deg) brightness(98%) contrast(89%);
+  color: #343a40;
 }
 .filter-circle{       /* filtre cercle icone loisir */
   border: #343a40 2px solid;
-  padding: 3px;
   border-radius: 50% ;
+  height: 4rem;
+  width: 4rem;
 }
 
 
@@ -115,6 +118,9 @@ h4{
 .filtre-icons{    /*filtre icones*/
   height: 2rem;
   margin-right: 1rem;
+}
+.filtre-orange{
+  color: #ffc107 ;
 }
 
 /*---------------------*/
@@ -146,7 +152,7 @@ header{
   color: black;
   text-transform: uppercase;
 }
-#block2 header , #block2 article {     /*marge droite gauche haut*/     
+#block2 header , #block2 section {     /*marge droite gauche haut*/     
   margin-left: auto;
   margin-right: auto;
   width: 92%;
@@ -197,9 +203,9 @@ th p{
 }
 }
   
-/* Si la taille de l'écran est de 720 pixels ou plus, définis loisir comme ci-dessous*/
-@media only screen and (min-width: 720px){
-  #loisir {    /* Position article loisir*/
+/* Si la taille de l'écran est de 576px pixels ou plus, définis loisir comme ci-dessous*/
+@media only screen and (min-width: 576px){
+  #loisir {    /* Position section loisir*/
     position: absolute;
     bottom: 0;
   }
