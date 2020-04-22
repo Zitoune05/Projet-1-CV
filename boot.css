@@ -11,15 +11,15 @@
 @media (min-width: 1200px) { ... }
 
 
-                    /**--------------------**/
-                    /*== graphisme Principal*/
-                    /**--------------------**/
-
-
-div [id="block2"], div [id="block1"]{    /* famille police*/
+/*--------------------------------*/
+/* graphisme principal */
+/*---------------------------------*/
+body{
+  background-color: #ffffff;
+    /* famille police*/
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-div [id="block2"] hr {        /* graphisme element rupture */
+#block2 hr {        /* graphisme element rupture */
   border: none;
   text-align: center;
   height: 2px;
@@ -30,40 +30,96 @@ a{         /*position bouton*/
   top: 0;
   right: 0;
 }
-          /*------------------*/
-          /* graphisme block1*/
-          /*------------------*/
+h4{
+  text-transform: uppercase;
+}
+/*--------------------------------*/
+/* graphisme block1 */
+/*---------------------------------*/
 
-div [id="block1"] h2{        /* format police*/
+#photo{
+  margin-top: 2em ;
+  margin-bottom: 3em;
+}
+#moi{
+  width: 75%;
+  height: auto;
+  margin: auto;
+  border: 4px solid #d8ad15;
+  border-radius: 50%;
+}
+#block1 h2{        /* format police*/
   text-transform: uppercase;
   font-size: 2em;
 }
-div [id="block1"] div p {         /* marge + alignement texte p */
-  margin-left: 10%;margin-right: 10%;
+/*         ----------------                */
+/* marges hautes et basses articles block 1*/
+/*         ----------------                */
+#contact{                   
+  padding-bottom: 2em;
+}
+#contact h2 + p{
+  margin-top: 2em;          
+}
+#a-propos{
+  padding-bottom: 2em;
+}
+#a-propos h2 + p{
+  margin-top: 2em;
+}
+#loisir h2 + p{            
+  margin-top: 2em;
+}
+#block1 p {         /* marge + alignement texte p */
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
   text-align: justify;
   font-weight: 500;
 }
-div [id="block1"] div{          /* marge haut + alignement texte div*/
+#block1 article{          /* alignement texte articles*/
+  width: 100%;
   text-align: center;
-  margin-top: 10%;
 }
-div [id="block1"] div[id="moi"]{         /* marge img*/
-  padding: 8%;
+.dimension{           /*dimension icone loisir FontAwesome*/
+  width: 90px;
+  height: 80px;
 }
-.filter-grey{         /* couleur icone */
+
+#loisir{
+  padding-bottom: 2em;
+}
+#loisir img{
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+#loisir p{  
+  margin-bottom: 0px;        
+  text-align: center;
+}
+.filter-grey{         /* couleur icone loisir */
   filter: invert(19%) sepia(13%) saturate(502%) hue-rotate(169deg) brightness(98%) contrast(89%);
 }
-div [id="loisir"]{    /* Position div loisir*/
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+.filter-circle{       /* filtre cercle icone loisir */
+  border: #343a40 2px solid;
+  padding: 3px;
+  border-radius: 50% ;
 }
 
-          /*-----------------*/
-          /* graphisme block2*/
-          /*-----------------*/
 
-    /*==Tete de page h1+p */
+/*--------------------------------*/
+/* graphisme block2*/
+/*---------------------------------*/
+
+
+.filtre-icons{    /*filtre icones*/
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+/*---------------------*/
+/*Tete de page h1+p*/ 
+/*---------------------*/
 header p span{            /*soulignement */
   border-bottom: 2px solid #ffc107;
   padding: 0 0 3px;
@@ -71,6 +127,7 @@ header p span{            /*soulignement */
 }
 header h1 span{           /*couleur span */
   color: #ffc107;
+  font-weight: 400;
 }
 header h1{                
   font-size: 4.2em;       /*taille police*/
@@ -84,27 +141,66 @@ header{
   margin-bottom: 13%;     /*marge basse*/
 }
 
-
-/*titre h2*/
-div [id="block2"] h2{       /*taille couleur police*/        
-  font-size: 2em;
+#block2 h2{       /*taille couleur police h2*/        
+  font-size: 2rem;
   color: black;
   text-transform: uppercase;
 }
-/*Marge div*/
-div [id="block2"] header , div [id="block2"] div {     /*marge droite gauche haut*/     
-  margin-left: 4%;
-  margin-right: 4%;
+#block2 header , #block2 article {     /*marge droite gauche haut*/     
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
   margin-top: 10%;
 }
 
-/*==Tableaux */
-div [id="block2"] tr{         /* color police */
+
+/*---------------------*/
+/* Tableaux */ 
+/*---------------------*/
+
+#block2 tr{         /* couleur police */
   color: #4a4a4a;
 }
-div [id="block2"]  th[class="Dates"]{     /*marge cellule*/
-  width: 25%;
+#block2 th{
+  width: 220px;
 }
-div [id="block2"] table{        /*couleur tableaux*/
+#block2 table{
+  padding-top: 5em;
+}
+#block2 table{        /*couleur tableaux*/
   background-color: #ffffff;
+}
+th, em{         /* em*/
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+}
+th p{
+  padding-left: 20px;
+}
+
+/* Si la taille de l'écran est de 588 pixels ou moins, définis tr comme ci-dessous*/
+@media only screen and (max-width: 588px){
+  tr{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  td{
+    margin-left: 35px;
+  }
+}
+
+/* Si la taille de l'écran est de 360 pixels ou moins, définis h2 pour le block2 comme ci-dessous*/
+@media only screen and (max-width: 360px){
+#block2 h2{
+  font-size: 1.7rem;
+}
+}
+  
+/* Si la taille de l'écran est de 720 pixels ou plus, définis loisir comme ci-dessous*/
+@media only screen and (min-width: 720px){
+  #loisir {    /* Position article loisir*/
+    position: absolute;
+    bottom: 0;
+  }
 }
