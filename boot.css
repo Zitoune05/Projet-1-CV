@@ -2,17 +2,17 @@
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+@media (min-width: 576px){ ... }
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+@media (min-width: 768px){ ... }
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+@media (min-width: 992px){ ... }
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
+@media (min-width: 1200px){ ... }
 
 
 /*--------------------------------*/
-/* graphisme principal */
+/*graphisme principal*/
 /*---------------------------------*/
 body{
   width: 100%;
@@ -36,7 +36,7 @@ h4{
   text-transform: uppercase;
 }
 /*--------------------------------*/
-/* graphisme block1 */
+/*graphisme block1*/
 /*---------------------------------*/
 
 #photo{
@@ -50,7 +50,7 @@ h4{
   border: 4px solid #d8ad15;
   border-radius: 50%;
 }
-#block1 h2{        /* format police*/
+#block1 h2{        /*format police*/
   text-transform: uppercase;
   font-size: 2em;
 }
@@ -79,7 +79,7 @@ h4{
   text-align: justify;
   font-weight: 500;
 }
-#block1 section, #block1 header{          /* alignement texte sections*/
+#block1 section, #block1 header{          /* alignement texte sections + header*/
   width: 100%;
   text-align: center;
 }
