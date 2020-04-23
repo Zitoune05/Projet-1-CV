@@ -85,16 +85,12 @@ h4{
   padding-top: 15px;
 }
 
-#loisir{
+#loisir{          /*marge section loisir*/
   padding-bottom: 2em;
 }
-#loisir img{
+#loisir img{      /*marge entre icones - section loisir*/
   margin-right: 5px;
   margin-bottom: 5px;
-}
-#loisir p{  
-  margin-bottom: 0px;        
-  text-align: center;
 }
 .filter-grey{         /* couleur icone loisir */
   color: #343a40;
@@ -164,10 +160,10 @@ header{
 #block2 tr{         /* couleur police */
   color: #4a4a4a;
 }
-#block2 th{
+#block2 th{         /*dimension th*/
   width: 220px;
 }
-#block2 table{
+#block2 table{      /*marge tableau*/
   padding-top: 5em;
 }
 #block2 table{        /*couleur tableaux*/
@@ -200,8 +196,8 @@ th p{
 }
 }
   
-/* Si la taille de l'écran est de 768px pixels ou plus, définis loisir comme ci-dessous*/
-@media only screen and (min-width: 768px){
+/* Si la taille de l'écran est de 992px pixels ou plus, définis loisir comme ci-dessous*/
+@media only screen and (min-width: 992px){
   #loisir {    /* Position section loisir*/
     position: absolute;
     bottom: 0;
