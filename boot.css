@@ -79,7 +79,7 @@ h4{
   text-align: justify;
   font-weight: 500;
 }
-#block1 section, header{          /* alignement texte sections*/
+#block1 section, #block1 header{          /* alignement texte sections*/
   width: 100%;
   text-align: center;
 }
